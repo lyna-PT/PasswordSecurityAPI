@@ -1,0 +1,5 @@
+Secret generated: XT3MGS4C2NJQ6PUELTA7ZJB7VICMFBAU
+Six-digit code: 730943
+Correct code accepted: true
+Incorrect code rejected: true
+Provisioning URI: otpauth://totp/PasswordSecurityAPI%3Atest-user%40example.com?secret=XT3MGS4C2NJQ6PUELTA7ZJB7VICMFBAU&issuer=PasswordSecurityAPI&algorithm=SHA1&digits=6&period=30

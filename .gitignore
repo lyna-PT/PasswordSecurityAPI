@@ -1,0 +1,6 @@
+node_modules/
+.env
+coverage/
+*.log
+src/data/totp-secrets.json
+src/data/totp-secrets.json.tmp
