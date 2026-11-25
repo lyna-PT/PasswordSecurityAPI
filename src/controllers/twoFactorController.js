@@ -119,10 +119,7 @@ function verifyTwoFactor(req, res) {
       });
     }
 
-    // Enable 2FA after the first valid enrollment code.
-    if (user.status === "pending") {
-      enableTwoFactor(userId);
-    }
+    
 
     // Reject a code whose time counter was already accepted.
     const accepted = markCounterAsUsed(userId, matchedCounter);
@@ -132,6 +129,10 @@ function verifyTwoFactor(req, res) {
         status: "error",
         message: "This verification code has already been used."
       });
+    }
+    // Enable 2FA after the first valid enrollment code.
+    if (user.status === "pending") {
+      enableTwoFactor(userId);
     }
 
     return res.status(200).json({

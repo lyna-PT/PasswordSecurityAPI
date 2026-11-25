@@ -31,10 +31,8 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// ✅ Mount password routes FIRST
 app.use("/api/password", passwordRoutes);
 
-// ✅ 404 handler LAST, and it should only send a response
 app.use((req, res) => {
   res.status(404).json({
     status: "error",
