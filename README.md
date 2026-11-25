@@ -28,8 +28,12 @@ The project implements:
 
 ## 3. Project Structure
 
-```text
 PasswordSecurityAPI/
+│
+├── public/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 │
 ├── src/
 │   ├── app.js
@@ -56,19 +60,20 @@ PasswordSecurityAPI/
 │   └── data/
 │
 ├── tests/
-│   ├── strength.test.js
-│   ├── generator.test.js
-│   ├── passphrase.test.js
-│   ├── hash.test.js
-│   ├── hibp.test.js
-│   └── totp.test.js
 │
 ├── .env
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
 └── README.md
-```
+
+### Frontend
+
+The `public/` directory contains the web interface served by Express.js.
+
+- `index.html`: Defines the structure and content of the web interface.
+- `style.css`: Controls the visual design, layout, colors, and responsive styling.
+- `script.js`: Handles frontend interactions and communicates with the backend API using HTTP requests.
 
 ## 4. Installation and Configuration
 
